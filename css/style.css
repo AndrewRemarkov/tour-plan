@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* Переменные */
+/* Базовые настройки */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+/* Header *//*# sourceMappingURL=style.css.map */
