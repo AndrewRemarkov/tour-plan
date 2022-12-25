@@ -333,27 +333,27 @@ body {
 }
 
 /* Стили для Header */
-.header {
+.navbar {
   background-color: #fff;
 }
-.header-top {
+.navbar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 0 40px;
 }
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
 }
-.header .search {
+.navbar .search {
   display: flex;
   position: relative;
   overflow: hidden;
   border-radius: 6px;
   height: 40px;
 }
-.header .search__input {
+.navbar .search__input {
   width: 350px;
   height: 100%;
   background-color: #F5FAFE;
@@ -364,7 +364,7 @@ body {
   padding: 0 75px 0 23px;
   color: #333333;
 }
-.header .search__button {
+.navbar .search__button {
   position: absolute;
   right: 0;
   top: 0;
@@ -374,12 +374,12 @@ body {
   border: none;
   cursor: pointer;
 }
-.header .user {
+.navbar .user {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.header .user__avatar {
+.navbar .user__avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -387,7 +387,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.header .user__name {
+.navbar .user__name {
   margin-left: 18px;
   font-weight: 400;
   font-size: 14px;
