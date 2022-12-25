@@ -329,7 +329,6 @@ body {
 .container {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0 5px 0;
 }
 
 /* Стили для Header */
@@ -345,6 +344,30 @@ body {
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
+}
+.navbar-bottom {
+  background-color: #0A223D;
+}
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 31px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar-menu__link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+.navbar .logo {
+  width: 177px;
+  height: auto;
 }
 .navbar .search {
   display: flex;
@@ -393,4 +416,36 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+/* Подключение медиа-запросов */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .navbar-top {
+    padding: 30px 0;
+  }
+  .navbar__search {
+    margin: 0 auto;
+    max-width: 340px;
+  }
+  .navbar-menu {
+    padding: 22px 0;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
 }/*# sourceMappingURL=style.css.map */
