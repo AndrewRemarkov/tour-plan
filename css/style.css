@@ -331,6 +331,10 @@ body {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Стили для Header */
 .navbar {
   background-color: #fff;
@@ -340,6 +344,9 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 40px 0 40px;
+}
+.navbar-top__menu-button {
+  display: none;
 }
 .navbar__search {
   margin-right: auto;
@@ -365,18 +372,21 @@ body {
   font-size: 14px;
   line-height: 18px;
 }
-.navbar .logo {
+
+.logo {
+  display: block;
   width: 177px;
   height: auto;
 }
-.navbar .search {
+
+.search {
   display: flex;
   position: relative;
   overflow: hidden;
   border-radius: 6px;
   height: 40px;
 }
-.navbar .search__input {
+.search__input {
   width: 350px;
   height: 100%;
   background-color: #F5FAFE;
@@ -387,7 +397,7 @@ body {
   padding: 0 75px 0 23px;
   color: #333333;
 }
-.navbar .search__button {
+.search__button {
   position: absolute;
   right: 0;
   top: 0;
@@ -397,12 +407,13 @@ body {
   border: none;
   cursor: pointer;
 }
-.navbar .user {
+
+.user {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.navbar .user__avatar {
+.user__avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -410,7 +421,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.navbar .user__name {
+.user__name {
   margin-left: 18px;
   font-weight: 400;
   font-size: 14px;
@@ -427,6 +438,9 @@ body {
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
+  }
+  .logo {
+    width: 132px;
   }
   .navbar-top {
     padding: 30px 0;
@@ -447,5 +461,29 @@ body {
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .navbar__search, .navbar__user, .navbar-menu {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+    width: 16px;
+    height: 11px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
 }/*# sourceMappingURL=style.css.map */
